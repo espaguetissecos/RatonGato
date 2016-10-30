@@ -1,0 +1,38 @@
+Llamada por el botón \char`\"{}\-Enviar Archivo\char`\"{}.
+
+Genera mensajes para enviar al servidor.\hypertarget{ServerReply_SYNOPSIS}{}\section{S\-Y\-N\-O\-P\-S\-I\-S}\label{ServerReply_SYNOPSIS}
+\begin{DoxyVerb} #include  <cabeceras.h>
+   #include  <clientfuncs.h>
+
+   boolean IRCInterface_SendFile ( char* filename , char*  nick , char*  data , long unsigned int length) 
+\end{DoxyVerb}
+\hypertarget{ServerReply_descripcion}{}\section{D\-E\-S\-C\-R\-I\-P\-C\-IÓ\-N}\label{ServerReply_descripcion}
+Llamada por el botón \char`\"{}\-Enviar Archivo\char`\"{}. Previamente debe seleccionarse un nick del canal para darle voz a dicho usuario. Esta función como todos los demás callbacks bloquea el interface y por tanto es el programador el que debe determinar si crea un nuevo hilo para enviar el archivo o no lo hace.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.\hypertarget{ServerReply_retorno}{}\section{R\-E\-T\-O\-R\-N\-O}\label{ServerReply_retorno}
+Devuelve T\-R\-U\-E si se ha establecido la comunicación y F\-A\-L\-S\-E en caso contrario.\hypertarget{ServerReply_authors}{}\section{A\-U\-T\-O\-R}\label{ServerReply_authors}
+Francisco Andreu Sanz (\href{mailto:francisco.andreu@estudiante.uam.es}{\tt francisco.\-andreu@estudiante.\-uam.\-es}) Javier Martínez Hernández (\href{mailto:javier.maritnez@estudiante.uam.es}{\tt javier.\-maritnez@estudiante.\-uam.\-es}) 
+
+
+
+Llamada por el botón \char`\"{}\-Enviar Archivo\char`\"{}.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Send\-File (char $\ast$ filename, char $\ast$nick, char $\ast$data, long unsigned int length)
+
+Llamada por el botón \char`\"{}\-Enviar Archivo\char`\"{}. Previamente debe seleccionarse un nick del canal para darle voz a dicho usuario. Esta función como todos los demás callbacks bloquea el interface y por tanto es el programador el que debe determinar si crea un nuevo hilo para enviar el archivo o no lo hace.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve T\-R\-U\-E si se ha establecido la comunicación y F\-A\-L\-S\-E en caso contrario.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ 

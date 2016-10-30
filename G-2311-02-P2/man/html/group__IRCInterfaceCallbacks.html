@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>ClienteIRC: Callbaks del interfaz</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ClienteIRC
+   &#160;<span id="projectnumber">1</span>
+   </div>
+   <div id="projectbrief">Cliente IRC en lenguaje C</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="modules.html"><span>Módulos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Grupos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Callbaks del interfaz</div>  </div>
+</div><!--header-->
+<div class="contents">
+<p>Funciones que van a ser llamadas desde el interface y que deben ser implementadas por el usuario. Todas estas funciones pertenecen al hilo del interfaz.</p>
+<p>El programador puede, por supuesto, separar todas estas funciones en múltiples ficheros a efectos de desarrollo y modularización.</p>
+<hr/>
+ 
+
+<h3><a class="anchor" id="IRCInterface_ActivateProtectTopic"></a>IRCInterface_ActivateProtectTopic</h3><div class="textblock">Llamada por el botón de activación de la protección de tópico.#include &lt;redes2/ircxchat.h&gt;void IRCInterface_ActivateProtectTopic (char * channel)Llamada por el botón de activación de la protección de tópico.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>No devuelve ningún valor ni código de error.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_DeactivateProtectTopic"></a>IRCInterface_DeactivateProtectTopic</h3><div class="textblock">Llamada por el botón de desactivación de la protección de tópico.#include &lt;redes2/ircxchat.h&gt;void IRCInterface_DeactivateProtectTopic (char * channel)Llamada por el botón de desactivación de la protección de tópico.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>No devuelve ningún valor ni código de error.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_ActivateExternalMessages"></a>IRCInterface_ActivateExternalMessages</h3><div class="textblock">Llamada por el botón de activación de la recepción de mensajes externos.#include &lt;redes2/ircxchat.h&gt;void IRCInterface_ActivateExternalMessages (char * channel)Llamada por el botón de activación de la recepción de mensajes externos.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>No devuelve ningún valor ni código de error.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_DeactivateExternalMessages"></a>IRCInterface_DeactivateExternalMessages</h3><div class="textblock">Llamada por el botón de desactivación de la recepción de mensajes externos.#include &lt;redes2/ircxchat.h&gt;void IRCInterface_DeactivateExternalMessages (char * channel)Llamada por el botón de desactivación de la recepción de mensajes externos.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>No devuelve ningún valor ni código de error.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_ActivateSecret"></a>IRCInterface_ActivateSecret</h3><div class="textblock">Llamada por el botón de activación de canal secreto.#include &lt;redes2/ircxchat.h&gt;void IRCInterface_ActivateSecret (char * channel)Llamada por el botón de activación de canal secreto.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>No devuelve ningún valor ni código de error.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_DeactivateSecret"></a>IRCInterface_DeactivateSecret</h3><div class="textblock">Llamada por el botón de desactivación de canal secreto.#include &lt;redes2/ircxchat.h&gt;void IRCInterface_DeactivateSecret (char * channel)Llamada por el botón de desactivación de canal secreto.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>No devuelve ningún valor ni código de error.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_ActivateInvite"></a>IRCInterface_ActivateInvite</h3><div class="textblock">Llamada por el botón de activación de canal de sólo invitación.#include &lt;redes2/ircxchat.h&gt;void IRCInterface_ActivateInvite (char * channel)Llamada por el botón de activación de canal de sólo invitación.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>No devuelve ningún valor ni código de error.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_DeactivateInvite"></a>IRCInterface_DeactivateInvite</h3><div class="textblock">Llamada por el botón de desactivación de canal de sólo invitación.#include &lt;redes2/ircxchat.h&gt;void IRCInterface_DeactivateInvite (char * channel)Llamada por el botón de desactivación de canal de sólo invitación.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>No devuelve ningún valor ni código de error.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_ActivatePrivate"></a>IRCInterface_ActivatePrivate</h3><div class="textblock">Llamada por el botón de activación del modo privado.#include &lt;redes2/ircxchat.h&gt;void IRCInterface_ActivatePrivate (char * channel)Llamada por el botón de activación del modo privado.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>No devuelve ningún valor ni código de error.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_DeactivatePrivate"></a>IRCInterface_DeactivatePrivate</h3><div class="textblock">Llamada por el botón de desactivación del modo privado.#include &lt;redes2/ircxchat.h&gt;void IRCInterface_DeactivatePrivate (char * channel)Llamada por el botón de desactivación del modo privado.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>No devuelve ningún valor ni código de error.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_ActivateModerated"></a>IRCInterface_ActivateModerated</h3><div class="textblock">Llamada por el botón de activación de la moderación del canal.#include &lt;redes2/ircxchat.h&gt;void IRCInterface_ActivateModerated (char * channel)Llamada por el botón de activación de la moderación del canal.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>No devuelve ningún valor ni código de error.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_DeactivateModerated"></a>IRCInterface_DeactivateModerated</h3><div class="textblock">Llamada por el botón de desactivación de la moderación del canal.#include &lt;redes2/ircxchat.h&gt;void IRCInterface_DeactivateModerated (char * channel)Llamada por el botón de desactivación de la moderación del canal.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>No devuelve ningún valor ni código de error.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_ActivateChannelKey"></a>IRCInterface_ActivateChannelKey</h3><div class="textblock">Llamada por el botón de activación de la clave del canal.#include &lt;redes2/ircxchat.h&gt;void IRCInterface_ActivateChannelKey (char * channel, char * key)Llamada por el botón de activación de la clave del canal. El segundo parámetro es la clave del canal que se desea poner. Si es NULL deberá impedirse la activación con la función implementada a tal efecto.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>No devuelve ningún valor ni código de error.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_DeactivateChannelKey"></a>IRCInterface_DeactivateChannelKey</h3><div class="textblock">Llamada por el botón de desactivación de la clave del canal.#include &lt;redes2/ircxchat.h&gt;void IRCInterface_DeactivateChannelKey (char * channel)Llamada por el botón de desactivación de la clave del canal.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>No devuelve ningún valor ni código de error.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_ActivateNicksLimit"></a>IRCInterface_ActivateNicksLimit</h3><div class="textblock">Llamada por el botón de activación del límite de usuarios en el canal.#include &lt;redes2/ircxchat.h&gt;void IRCInterface_ActivateNicksLimit (char * channel, int * limit)Llamada por el botón de activación del límite de usuarios en el canal. El segundo es el límite de usuarios que se desea poner. Si el valor es 0 se sobrentiende que se desea eliminar este límite.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>No devuelve ningún valor ni código de error.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_DeactivateNicksLimit"></a>IRCInterface_DeactivateNicksLimit</h3><div class="textblock">Llamada por el botón de desactivación de la protección de tópico.#include &lt;redes2/ircxchat.h&gt;void IRCInterface_DeactivateNicksLimit (char * channel)Llamada por el botón de desactivación del límite de usuarios en el canal.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>No devuelve ningún valor ni código de error.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_NewTopicEnter"></a>IRCInterface_NewTopicEnter</h3><div class="textblock">Llamada cuando se pulsa la tecla ENTER en el campo de tópico.#include &lt;redes2/ircxchat.h&gt;void IRCInterface_NewTopicEnter (char * topicdata)Llamada cuando se pulsa la tecla ENTER en el campo de tópico. Deberá intentarse cambiar el tópico del canal.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>No devuelve ningún valor ni código de error.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_NewCommandText"></a>IRCInterface_NewCommandText</h3><div class="textblock">Llamada la tecla ENTER en el campo de texto y comandos.#include &lt;redes2/ircxchat.h&gt;void IRCInterface_NewCommandText (char * command) jo  Llamada de la tecla ENTER en el campo de texto y comandos. El texto deberá ser enviado y el comando procesado por las funciones de "parseo" de comandos de usuario.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>No devuelve ningún valor ni código de error.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_GiveOp"></a>IRCInterface_GiveOp</h3><div class="textblock">Llamada por el botón "Op".#include &lt;redes2/ircxchat.h&gt;void IRCInterface_GiveOp (char * channel, char *nick)Llamada por el botón "Op". Previamente debe seleccionarse un nick del canal para darle "op" a dicho usuario.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>No devuelve ningún valor ni código de error.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_TakeOp"></a>IRCInterface_TakeOp</h3><div class="textblock">Llamada por el botón "Quitar Op".#include &lt;redes2/ircxchat.h&gt;void IRCInterface_TakeOp (char *channel, char *nick)Llamada por el botón "Quitar Op". Previamente debe seleccionarse un nick del canal para quitarle "op" a dicho usuario.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>No devuelve ningún valor ni código de error.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_GiveVoice"></a>IRCInterface_GiveVoice</h3><div class="textblock">Llamada por el botón "Dar voz".#include &lt;redes2/ircxchat.h&gt;void IRCInterface_GiveVoice (char * channel, char *nick)Llamada por el botón "Dar voz". Previamente debe seleccionarse un nick del canal para darle voz a dicho usuario.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>No devuelve ningún valor ni código de error.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_TakeVoice"></a>IRCInterface_TakeVoice</h3><div class="textblock">Llamada por el botón "Quitar voz".#include &lt;redes2/ircxchat.h&gt;void IRCInterface_TakeVoice (char * channel, char *nick)Llamada por el botón "Quitar voz". Previamente debe seleccionarse un nick del canal para darle voz a dicho usuario.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>No devuelve ningún valor ni código de error.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_BanNick"></a>IRCInterface_BanNick</h3><div class="textblock">Llamada por el botón "Banear".#include &lt;redes2/ircxchat.h&gt;void IRCInterface_BanNick (char * channel, char *nick)Llamada por el botón "Banear". Previamente debe seleccionarse un nick del canal para darle voz a dicho usuario.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>No devuelve ningún valor ni código de error.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_KickNick"></a>IRCInterface_KickNick</h3><div class="textblock">Llamada por el botón "Echar".#include &lt;redes2/ircxchat.h&gt;void IRCInterface_KickNick (char * channel, char *nick)Llamada por el botón "Echar". Previamente debe seleccionarse un nick del canal para darle voz a dicho usuario.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>No devuelve ningún valor ni código de error.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_StartAudioChat"></a>IRCInterface_StartAudioChat</h3><div class="textblock">Llamada por el botón "Iniciar" del diálogo de chat de voz.#include &lt;redes2/ircxchat.h&gt;void IRCInterface_StartAudioChat (char *nick)Llamada por el botón "Iniciar" del diálogo de chat de voz. Previamente debe seleccionarse un nick del canal para darle voz a dicho usuario. Esta función como todos los demás callbacks bloquea el interface y por tanto para mantener la funcionalidad del chat de voz es imprescindible crear un hilo a efectos de comunicación de voz.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>Devuelve TRUE si se ha establecido la comunicación y FALSE en caso contrario.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_StopAudioChat"></a>IRCInterface_StopAudioChat</h3><div class="textblock">Llamada por el botón "Parar" del diálogo de chat de voz.#include &lt;redes2/ircxchat.h&gt;void IRCInterface_StopAudioChat (char *nick)Llamada por el botón "Parar" del diálogo de chat de voz. Previamente debe seleccionarse un nick del canal para darle voz a dicho usuario. Esta función sólo para la comunicación que puede ser reiniciada. Evidentemente tiene que actuar sobre el hilo de chat de voz.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>Devuelve TRUE si se ha parado la comunicación y FALSE en caso contrario.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_ExitAudioChat"></a>IRCInterface_ExitAudioChat</h3><div class="textblock">Llamada por el botón "Cancelar" del diálogo de chat de voz.#include &lt;redes2/ircxchat.h&gt;void IRCInterface_ExitAudioChat (char *nick)Llamada por el botón "Parar" del diálogo de chat de voz. Previamente debe seleccionarse un nick del canal para darle voz a dicho usuario. Esta función cierrala comunicación. Evidentemente tiene que actuar sobre el hilo de chat de voz.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>Devuelve TRUE si se ha cerrado la comunicación y FALSE en caso contrario.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_DisconnectServer"></a>IRCInterface_DisconnectServer</h3><div class="textblock">Llamada por los distintos botones de desconexión.#include &lt;redes2/ircxchat.h&gt;void IRCInterface_DisconnectServer (char * server, int port)Llamada por los distintos botones de desconexión. Debe cerrar la conexión con el servidor.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>Devuelve TRUE si se ha cerrado la conexión y FALSE en caso contrario.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div>
+
+<h3><a class="anchor" id="IRCInterface_Connect"></a>IRCInterface_Connect</h3><div class="textblock">Llamada por los distintos botones de conexión.#include &lt;redes2/ircxchat.h&gt;void IRCInterface_Connect (char *nick, char * user, char * realname, char * password, char * server, int port, boolean ssl)Llamada por los distintos botones de conexión. Si implementará la comunicación completa, incluido el registro del usuario en el servidor.En cualquier caso sólo se puede realizar si el servidor acepta la orden.Esta función debe ser implementada por el alumno.<dl class="section return"><dt>Devuelve</dt><dd>Devuelve IRC_OK si todo ha sido correcto, IRCERR_NOSSL si el valor de SSL es TRUE y no se puede activar la conexión SSL pero sí una conexión no protegida. Devolverá IRCERR_NOCONNECT en caso de que no se pueda realizar la comunicación.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloy Anguiano (<a href="#" onclick="location.href='mai'+'lto:'+'elo'+'y.'+'ang'+'ui'+'ano'+'@u'+'am.'+'es'; return false;">eloy.<span style="display: none;">.nosp@m.</span>angu<span style="display: none;">.nosp@m.</span>iano@<span style="display: none;">.nosp@m.</span>uam.<span style="display: none;">.nosp@m.</span>es</a>)</dd></dl>
+<hr/>
+ </div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Martes, 19 de Abril de 2016 06:18:45 para ClienteIRC por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.TH "ServerReply" 3 "Martes, 19 de Abril de 2016" "Version 1" "ClienteIRC" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ServerReply \- ServerReply 
+Parsea la respuesta del servidor y realiza la accion necesaria\&.
+.SH "SYNOPSIS"
+.PP
+.PP
+.nf
+ #include  <cabeceras.h>
+   #include  <clientfuncs.h>
+
+ void ServerReply ( char* command, int  sockfd  )
+.fi
+.PP
+.SH "DESCRIPCIÓN"
+.PP
+Esta funcion genera parsea la respuesta del servidor y realiza la accion necesaria dependiendo de la respuesta de este en la interfaz\&.
+.PP
+Recibe como parametros command, la respuesta del servidor que debemos interpretar y sockfd, el socket al cual debemos enviar un mensaje si es necesario\&.
+.SH "RETORNO"
+.PP
+No retorna nada\&.
+.SH "AUTOR"
+.PP
+Francisco Andreu Sanz (francisco.andreu@estudiante.uam.es) Javier Martínez Hernández (javier.maritnez@estudiante.uam.es) 
+.PP
+ 

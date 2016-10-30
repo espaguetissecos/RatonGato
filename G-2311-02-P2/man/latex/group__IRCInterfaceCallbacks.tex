@@ -1,0 +1,617 @@
+\hypertarget{group__IRCInterfaceCallbacks}{\section{Callbaks del interfaz}
+\label{group__IRCInterfaceCallbacks}\index{Callbaks del interfaz@{Callbaks del interfaz}}
+}
+Funciones que van a ser llamadas desde el interface y que deben ser implementadas por el usuario. Todas estas funciones pertenecen al hilo del interfaz.
+
+El programador puede, por supuesto, separar todas estas funciones en múltiples ficheros a efectos de desarrollo y modularización.
+
+
+
+ \hypertarget{IRCInterface_ActivateProtectTopic}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Activate\-Protect\-Topic}\label{IRCInterface_ActivateProtectTopic}
+Llamada por el botón de activación de la protección de tópico.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Activate\-Protect\-Topic (char $\ast$ channel)
+
+Llamada por el botón de activación de la protección de tópico.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+No devuelve ningún valor ni código de error.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_DeactivateProtectTopic}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Deactivate\-Protect\-Topic}\label{IRCInterface_DeactivateProtectTopic}
+Llamada por el botón de desactivación de la protección de tópico.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Deactivate\-Protect\-Topic (char $\ast$ channel)
+
+Llamada por el botón de desactivación de la protección de tópico.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+No devuelve ningún valor ni código de error.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_ActivateExternalMessages}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Activate\-External\-Messages}\label{IRCInterface_ActivateExternalMessages}
+Llamada por el botón de activación de la recepción de mensajes externos.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Activate\-External\-Messages (char $\ast$ channel)
+
+Llamada por el botón de activación de la recepción de mensajes externos.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+No devuelve ningún valor ni código de error.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_DeactivateExternalMessages}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Deactivate\-External\-Messages}\label{IRCInterface_DeactivateExternalMessages}
+Llamada por el botón de desactivación de la recepción de mensajes externos.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Deactivate\-External\-Messages (char $\ast$ channel)
+
+Llamada por el botón de desactivación de la recepción de mensajes externos.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+No devuelve ningún valor ni código de error.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_ActivateSecret}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Activate\-Secret}\label{IRCInterface_ActivateSecret}
+Llamada por el botón de activación de canal secreto.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Activate\-Secret (char $\ast$ channel)
+
+Llamada por el botón de activación de canal secreto.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+No devuelve ningún valor ni código de error.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_DeactivateSecret}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Deactivate\-Secret}\label{IRCInterface_DeactivateSecret}
+Llamada por el botón de desactivación de canal secreto.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Deactivate\-Secret (char $\ast$ channel)
+
+Llamada por el botón de desactivación de canal secreto.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+No devuelve ningún valor ni código de error.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_ActivateInvite}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Activate\-Invite}\label{IRCInterface_ActivateInvite}
+Llamada por el botón de activación de canal de sólo invitación.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Activate\-Invite (char $\ast$ channel)
+
+Llamada por el botón de activación de canal de sólo invitación.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+No devuelve ningún valor ni código de error.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_DeactivateInvite}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Deactivate\-Invite}\label{IRCInterface_DeactivateInvite}
+Llamada por el botón de desactivación de canal de sólo invitación.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Deactivate\-Invite (char $\ast$ channel)
+
+Llamada por el botón de desactivación de canal de sólo invitación.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+No devuelve ningún valor ni código de error.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_ActivatePrivate}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Activate\-Private}\label{IRCInterface_ActivatePrivate}
+Llamada por el botón de activación del modo privado.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Activate\-Private (char $\ast$ channel)
+
+Llamada por el botón de activación del modo privado.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+No devuelve ningún valor ni código de error.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_DeactivatePrivate}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Deactivate\-Private}\label{IRCInterface_DeactivatePrivate}
+Llamada por el botón de desactivación del modo privado.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Deactivate\-Private (char $\ast$ channel)
+
+Llamada por el botón de desactivación del modo privado.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+No devuelve ningún valor ni código de error.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_ActivateModerated}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Activate\-Moderated}\label{IRCInterface_ActivateModerated}
+Llamada por el botón de activación de la moderación del canal.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Activate\-Moderated (char $\ast$ channel)
+
+Llamada por el botón de activación de la moderación del canal.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+No devuelve ningún valor ni código de error.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_DeactivateModerated}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Deactivate\-Moderated}\label{IRCInterface_DeactivateModerated}
+Llamada por el botón de desactivación de la moderación del canal.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Deactivate\-Moderated (char $\ast$ channel)
+
+Llamada por el botón de desactivación de la moderación del canal.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+No devuelve ningún valor ni código de error.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_ActivateChannelKey}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Activate\-Channel\-Key}\label{IRCInterface_ActivateChannelKey}
+Llamada por el botón de activación de la clave del canal.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Activate\-Channel\-Key (char $\ast$ channel, char $\ast$ key)
+
+Llamada por el botón de activación de la clave del canal. El segundo parámetro es la clave del canal que se desea poner. Si es N\-U\-L\-L deberá impedirse la activación con la función implementada a tal efecto.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+No devuelve ningún valor ni código de error.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_DeactivateChannelKey}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Deactivate\-Channel\-Key}\label{IRCInterface_DeactivateChannelKey}
+Llamada por el botón de desactivación de la clave del canal.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Deactivate\-Channel\-Key (char $\ast$ channel)
+
+Llamada por el botón de desactivación de la clave del canal.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+No devuelve ningún valor ni código de error.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_ActivateNicksLimit}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Activate\-Nicks\-Limit}\label{IRCInterface_ActivateNicksLimit}
+Llamada por el botón de activación del límite de usuarios en el canal.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Activate\-Nicks\-Limit (char $\ast$ channel, int $\ast$ limit)
+
+Llamada por el botón de activación del límite de usuarios en el canal. El segundo es el límite de usuarios que se desea poner. Si el valor es 0 se sobrentiende que se desea eliminar este límite.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+No devuelve ningún valor ni código de error.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_DeactivateNicksLimit}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Deactivate\-Nicks\-Limit}\label{IRCInterface_DeactivateNicksLimit}
+Llamada por el botón de desactivación de la protección de tópico.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Deactivate\-Nicks\-Limit (char $\ast$ channel)
+
+Llamada por el botón de desactivación del límite de usuarios en el canal.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+No devuelve ningún valor ni código de error.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_NewTopicEnter}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-New\-Topic\-Enter}\label{IRCInterface_NewTopicEnter}
+Llamada cuando se pulsa la tecla E\-N\-T\-E\-R en el campo de tópico.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-New\-Topic\-Enter (char $\ast$ topicdata)
+
+Llamada cuando se pulsa la tecla E\-N\-T\-E\-R en el campo de tópico. Deberá intentarse cambiar el tópico del canal.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+No devuelve ningún valor ni código de error.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_NewCommandText}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-New\-Command\-Text}\label{IRCInterface_NewCommandText}
+Llamada la tecla E\-N\-T\-E\-R en el campo de texto y comandos.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-New\-Command\-Text (char $\ast$ command) jo  Llamada de la tecla E\-N\-T\-E\-R en el campo de texto y comandos. El texto deberá ser enviado y el comando procesado por las funciones de \char`\"{}parseo\char`\"{} de comandos de usuario.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+No devuelve ningún valor ni código de error.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_GiveOp}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Give\-Op}\label{IRCInterface_GiveOp}
+Llamada por el botón \char`\"{}\-Op\char`\"{}.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Give\-Op (char $\ast$ channel, char $\ast$nick)
+
+Llamada por el botón \char`\"{}\-Op\char`\"{}. Previamente debe seleccionarse un nick del canal para darle \char`\"{}op\char`\"{} a dicho usuario.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+No devuelve ningún valor ni código de error.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_TakeOp}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Take\-Op}\label{IRCInterface_TakeOp}
+Llamada por el botón \char`\"{}\-Quitar Op\char`\"{}.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Take\-Op (char $\ast$channel, char $\ast$nick)
+
+Llamada por el botón \char`\"{}\-Quitar Op\char`\"{}. Previamente debe seleccionarse un nick del canal para quitarle \char`\"{}op\char`\"{} a dicho usuario.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+No devuelve ningún valor ni código de error.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_GiveVoice}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Give\-Voice}\label{IRCInterface_GiveVoice}
+Llamada por el botón \char`\"{}\-Dar voz\char`\"{}.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Give\-Voice (char $\ast$ channel, char $\ast$nick)
+
+Llamada por el botón \char`\"{}\-Dar voz\char`\"{}. Previamente debe seleccionarse un nick del canal para darle voz a dicho usuario.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+No devuelve ningún valor ni código de error.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_TakeVoice}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Take\-Voice}\label{IRCInterface_TakeVoice}
+Llamada por el botón \char`\"{}\-Quitar voz\char`\"{}.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Take\-Voice (char $\ast$ channel, char $\ast$nick)
+
+Llamada por el botón \char`\"{}\-Quitar voz\char`\"{}. Previamente debe seleccionarse un nick del canal para darle voz a dicho usuario.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+No devuelve ningún valor ni código de error.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_BanNick}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Ban\-Nick}\label{IRCInterface_BanNick}
+Llamada por el botón \char`\"{}\-Banear\char`\"{}.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Ban\-Nick (char $\ast$ channel, char $\ast$nick)
+
+Llamada por el botón \char`\"{}\-Banear\char`\"{}. Previamente debe seleccionarse un nick del canal para darle voz a dicho usuario.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+No devuelve ningún valor ni código de error.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_KickNick}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Kick\-Nick}\label{IRCInterface_KickNick}
+Llamada por el botón \char`\"{}\-Echar\char`\"{}.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Kick\-Nick (char $\ast$ channel, char $\ast$nick)
+
+Llamada por el botón \char`\"{}\-Echar\char`\"{}. Previamente debe seleccionarse un nick del canal para darle voz a dicho usuario.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+No devuelve ningún valor ni código de error.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_StartAudioChat}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Start\-Audio\-Chat}\label{IRCInterface_StartAudioChat}
+Llamada por el botón \char`\"{}\-Iniciar\char`\"{} del diálogo de chat de voz.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Start\-Audio\-Chat (char $\ast$nick)
+
+Llamada por el botón \char`\"{}\-Iniciar\char`\"{} del diálogo de chat de voz. Previamente debe seleccionarse un nick del canal para darle voz a dicho usuario. Esta función como todos los demás callbacks bloquea el interface y por tanto para mantener la funcionalidad del chat de voz es imprescindible crear un hilo a efectos de comunicación de voz.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve T\-R\-U\-E si se ha establecido la comunicación y F\-A\-L\-S\-E en caso contrario.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_StopAudioChat}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Stop\-Audio\-Chat}\label{IRCInterface_StopAudioChat}
+Llamada por el botón \char`\"{}\-Parar\char`\"{} del diálogo de chat de voz.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Stop\-Audio\-Chat (char $\ast$nick)
+
+Llamada por el botón \char`\"{}\-Parar\char`\"{} del diálogo de chat de voz. Previamente debe seleccionarse un nick del canal para darle voz a dicho usuario. Esta función sólo para la comunicación que puede ser reiniciada. Evidentemente tiene que actuar sobre el hilo de chat de voz.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve T\-R\-U\-E si se ha parado la comunicación y F\-A\-L\-S\-E en caso contrario.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_ExitAudioChat}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Exit\-Audio\-Chat}\label{IRCInterface_ExitAudioChat}
+Llamada por el botón \char`\"{}\-Cancelar\char`\"{} del diálogo de chat de voz.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Exit\-Audio\-Chat (char $\ast$nick)
+
+Llamada por el botón \char`\"{}\-Parar\char`\"{} del diálogo de chat de voz. Previamente debe seleccionarse un nick del canal para darle voz a dicho usuario. Esta función cierrala comunicación. Evidentemente tiene que actuar sobre el hilo de chat de voz.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve T\-R\-U\-E si se ha cerrado la comunicación y F\-A\-L\-S\-E en caso contrario.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_DisconnectServer}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Disconnect\-Server}\label{IRCInterface_DisconnectServer}
+Llamada por los distintos botones de desconexión.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Disconnect\-Server (char $\ast$ server, int port)
+
+Llamada por los distintos botones de desconexión. Debe cerrar la conexión con el servidor.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve T\-R\-U\-E si se ha cerrado la conexión y F\-A\-L\-S\-E en caso contrario.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ \hypertarget{IRCInterface_Connect}{}\subsubsection{I\-R\-C\-Interface\-\_\-\-Connect}\label{IRCInterface_Connect}
+Llamada por los distintos botones de conexión.
+
+\#include $<$redes2/ircxchat.\-h$>$
+
+void I\-R\-C\-Interface\-\_\-\-Connect (char $\ast$nick, char $\ast$ user, char $\ast$ realname, char $\ast$ password, char $\ast$ server, int port, boolean ssl)
+
+Llamada por los distintos botones de conexión. Si implementará la comunicación completa, incluido el registro del usuario en el servidor.
+
+En cualquier caso sólo se puede realizar si el servidor acepta la orden.
+
+Esta función debe ser implementada por el alumno.
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve I\-R\-C\-\_\-\-O\-K si todo ha sido correcto, I\-R\-C\-E\-R\-R\-\_\-\-N\-O\-S\-S\-L si el valor de S\-S\-L es T\-R\-U\-E y no se puede activar la conexión S\-S\-L pero sí una conexión no protegida. Devolverá I\-R\-C\-E\-R\-R\-\_\-\-N\-O\-C\-O\-N\-N\-E\-C\-T en caso de que no se pueda realizar la comunicación.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Autor}
+Eloy Anguiano (\href{mailto:eloy.anguiano@uam.es}{\tt eloy.\-anguiano@uam.\-es})
+\end{DoxyAuthor}
+
+
+ 

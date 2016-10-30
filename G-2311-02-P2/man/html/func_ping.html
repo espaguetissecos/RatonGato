@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>ClienteIRC: func_ping</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ClienteIRC
+   &#160;<span id="projectnumber">1</span>
+   </div>
+   <div id="projectbrief">Cliente IRC en lenguaje C</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="modules.html"><span>Módulos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Grupos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">func_ping </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Realiza el envio del mensaje /PING de manera periodica al servidor.</p>
+<h1><a class="anchor" id="SYNOPSIS"></a>
+SYNOPSIS</h1>
+<pre class="fragment"> #include  &lt;cabeceras.h&gt;
+   #include  &lt;clientfuncs.h&gt;
+
+ void* func_ping ( void* thr_info )
+</pre><h1><a class="anchor" id="descripcion"></a>
+DESCRIPCIÓN</h1>
+<p>Esta funcion genera y envia al servidor el mensaje /PING de manera periodica mediante el uso de hilos.</p>
+<p>Recibe como parametros thr_info, donde se encuentra la informacion para el envio.</p>
+<h1><a class="anchor" id="retorno"></a>
+RETORNO</h1>
+<p>No retorna nada.</p>
+<h1><a class="anchor" id="authors"></a>
+AUTOR</h1>
+<p>Francisco Andreu Sanz (<a href="#" onclick="location.href='mai'+'lto:'+'fra'+'nc'+'isc'+'o.'+'and'+'re'+'u@e'+'st'+'udi'+'an'+'te.'+'ua'+'m.e'+'s'; return false;">franc<span style="display: none;">.nosp@m.</span>isco<span style="display: none;">.nosp@m.</span>.andr<span style="display: none;">.nosp@m.</span>eu@e<span style="display: none;">.nosp@m.</span>studi<span style="display: none;">.nosp@m.</span>ante<span style="display: none;">.nosp@m.</span>.uam.<span style="display: none;">.nosp@m.</span>es</a>) Javier Martínez Hernández (<a href="#" onclick="location.href='mai'+'lto:'+'jav'+'ie'+'r.m'+'ar'+'itn'+'ez'+'@es'+'tu'+'dia'+'nt'+'e.u'+'am'+'.es'; return false;">javie<span style="display: none;">.nosp@m.</span>r.ma<span style="display: none;">.nosp@m.</span>ritne<span style="display: none;">.nosp@m.</span>z@es<span style="display: none;">.nosp@m.</span>tudia<span style="display: none;">.nosp@m.</span>nte.<span style="display: none;">.nosp@m.</span>uam.e<span style="display: none;">.nosp@m.</span>s</a>) </p>
+<hr/>
+ </div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Martes, 19 de Abril de 2016 06:18:44 para ClienteIRC por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>
