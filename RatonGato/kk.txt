@@ -1,0 +1,74 @@
+
+    
+        <link rel="stylesheet" type="text/css" href="/static/css/mycss.css">
+    
+
+
+<html>
+<head>
+
+    
+    <!-- to included app-template dependent js -->
+    
+
+    
+    <!-- for anything inside head -->
+    
+    <title>Rat&oacute;n y gato</title>
+
+</head>
+
+<body>
+
+
+<!-- an icon and application name goes here -->
+<div id="title">
+    
+    
+</div>
+
+<div id="header">
+    
+    <!-- Default menu here -->
+    <H1></H1>
+    <nav class="cl-effect-20">
+        <a href="/client/login/"><span data-hover="&#161;Entra!">Log In</span></a>
+        <a href="/client/register/"><span data-hover="&#161;Reg&#237;strate!">Register</span></a>
+        <a href="/client/logout/"><span data-hover="Salir">Log Out</span></a>
+
+        
+    </nav>
+</div>
+<hr/>
+
+
+
+        <form class="formulario" method="post" action="/client/register/">
+    
+
+            <input type='hidden' name='csrfmiddlewaretoken' value='Y7QTBI3zp7q93sCvyKFPWLllbePhKjF1' />
+
+            
+                
+                Usuario: 
+                <input id="id_username" maxlength="128" name="username" type="text" /><br>
+            
+                
+                Contrasena:
+                <input id="id_password" name="password" type="password" /><br>
+            
+
+            <input type="submit" name="submit" value="Registrarse" />
+        </form>
+
+
+
+
+<div id="footer">
+Copyright © RatonGato
+</div>
+
+
+</body>
+</html>/usr/bin/curl -v -c cat.txt -b cat.txt http://127.0.0.1:8000/client/register/
+('command', '/usr/bin/curl -v -c cat.txt -b cat.txt http://127.0.0.1:8000/client/register/', 'cwd', '/home/kiko/Escritorio/RatonGato')
