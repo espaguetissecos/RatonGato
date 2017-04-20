@@ -1,0 +1,61 @@
+{% load staticfiles %}
+    {% block extra_css %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/mycss.css' %}">
+    {% endblock extra_css %}
+
+
+<html>
+<head>
+
+    {% block extra_js %}
+    <!-- to included app-template dependent js -->
+    {% endblock extra_js %}
+
+    {% block extra_head %}
+    <!-- for anything inside head -->
+    {% endblock extra_head %}
+    <title>{% block title %}Rat&oacute;n y gato{% endblock %}</title>
+
+</head>
+
+<body>
+
+
+<!-- an icon and application name goes here -->
+<div id="title">
+    {% block atitle %}
+    {% endblock atitle %}
+</div>
+
+<div id="header">
+    {% block menu %}
+    <!-- Default menu here -->
+    <H1></H1>
+    <nav class="cl-effect-20">
+        <a href="{% url 'client.views.login' %}"><span data-hover="&#161;Entra!">Log In</span></a>
+        <a href="{% url 'client.views.register' %}"><span data-hover="&#161;Reg&#237;strate!">Register</span></a>
+        <a href="{% url 'client.views.logout' %}"><span data-hover="Salir">Log Out</span></a>
+
+        {% if username %}
+            <H2>Usuario: {{ username }}</H2>
+        {% endif %}
+    </nav>
+</div>
+<hr/>
+{% endblock menu %}
+
+{% block content %}
+<div id="content">
+
+</div>
+{% endblock content %}
+
+
+{% block footer %}
+<div id="footer">
+Copyright © RatonGato
+</div>
+{% endblock footer %}
+
+</body>
+</html>
